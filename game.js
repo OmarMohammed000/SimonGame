@@ -30,7 +30,7 @@ function nextSequence() {
   level++;
 }
 function playSound(name) {
-  let audio = new Audio(`/sounds/${name}.mp3`);
+  let audio = new Audio("sounds/" + name + ".mp3");
   audio.play();
 }
 function animatePress(currentColour) {
