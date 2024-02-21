@@ -4,7 +4,7 @@ let userClickedPattern = [];
 let state = "inactive";
 let level = 0;
 function animateGamePattern(gamePattern) {
-  const delay = 550; 
+  const delay = 600; 
 
   for (let i = 0; i < gamePattern.length; i++) {
     animateItem(gamePattern[i], i * delay);
