@@ -24,7 +24,6 @@ function nextSequence() {
   gamePattern.push(randomChosenColor);
   
   animateGamePattern(gamePattern);
-  playSound(randomChosenColor)
   state = "active";
   $("h1").text(`Level ${level + 1}`);
   level++;
@@ -55,7 +54,7 @@ function checkAnswer(currentLevel) {
       userClickedPattern = [];
     }
   } else {
-    let fail = new Audio("/sounds/wrong.mp3");
+    let fail = new Audio("sounds/wrong.mp3");
     fail.play();
     $("body").addClass("game-over")
     setTimeout(()=>{
